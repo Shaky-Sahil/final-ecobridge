@@ -1,5 +1,7 @@
 import React from 'react';
 import './CardPage.css';
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 const cardData = [
   {
     id: 1,
@@ -21,26 +23,28 @@ const cardData = [
   },
   {
     id: 4,
-    title: 'E-Waste',
+    title: 'E-Waste.',
     imageUrl: 'https://images.unsplash.com/photo-1612965110667-4175024b0dcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80',
     description: 'A concise guide to dry waste management and key principles for conscientious handling.',
   },
   // Add more card data as needed
 ];
 
-const Card = ({ title, imageUrl, description }) => (
+const Card = ({ title, imageUrl, description,id}) => (
   <div className="card">
     <img src={imageUrl} alt={title} className="card-image" />
     <div className="card-content">
       <h3>{title}</h3>
       <p>{description}</p>
+      <Link to={`guide${id}`} className='nog' style={{textDecoration: 'none'}} >Read more.</Link>
     </div>
   </div>
 );
 
 const CardPage = () => (
   <div className="CardPage">
-    <h1>Card Display Page</h1>
+    <Navbar/>
+    <h1 className='h1'>SEGMENTATION GUIDE</h1>
     <div className="card-list">
       {cardData.map((card) => (
         <Card
@@ -48,6 +52,7 @@ const CardPage = () => (
           title={card.title}
           imageUrl={card.imageUrl}
           description={card.description}
+          id={card.id}
         />
       ))}
     </div>
