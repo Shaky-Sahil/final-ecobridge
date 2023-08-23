@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.background{
+  box-shadow: 0 0 1.00em rgb(83, 113, 64);
+}
+
+.Home{
+  box-shadow: 0 0 1.00em rgb(52, 63, 45);
+}

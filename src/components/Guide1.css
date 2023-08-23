@@ -1,0 +1,57 @@
+/* Appointment.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  .Appointment {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .Head1 {
+    margin-top: 20px;
+  }
+  
+  .black {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-button {
+    color: white;
+    background-color: #49c77f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .map1,
+  .map {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .black {
+      flex-direction: column;
+    }
+    
+    .search-button {
+      margin-top: 10px;
+    }
+  }
+  .medium-clone{
+    background-color: #1A1A1A;
+    
+  }
+ 

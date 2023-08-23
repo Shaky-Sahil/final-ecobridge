@@ -1,0 +1,58 @@
+/* LoginPage.css */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1A1A1A;
+box-shadow: 8px 4px 200px 0px rgba(0, 0, 0, 0.38);
+  }
+  
+.app-title {
+    color: #FFF;
+    text-align: center;
+   
+    line-height: normal;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    width: 14.3125rem;
+    height: 4.8125rem;
+    flex-shrink: 0;
+  }
+  
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    background-color: #4CE5B1;
+    color: white;
+    border: none;
+   
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signup-button {
+    background-color: #4CE5B1;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
