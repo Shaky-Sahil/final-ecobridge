@@ -24,7 +24,7 @@ function Homepage() {
         <h1 className='text-center text-white mr-10 ml-10'>Bridging Communities Towards A Sustainable Future, One Step At A Time.</h1>
         
         <div className='absolute w-full h-screen grid place-content-center'>
-        <button className='w-full mt-[60%] bg-green-500 pt-1 pb-1 text-white rounded-xl pl-[60px] pr-[60px] background'  onClick={()=>{navigate('/login')}}>Chat With Others! </button>
+        <button className='w-full mt-[60%] bg-green-500 pt-1 pb-1 text-white rounded-xl pl-[60px] pr-[60px] background'  onClick={()=>{navigate('/chat')}}>Chat With Others! </button>
          
         </div>
     </div>
